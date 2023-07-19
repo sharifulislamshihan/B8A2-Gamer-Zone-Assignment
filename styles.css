@@ -450,4 +450,134 @@ header{
 
 /* Tab */
 
-@media screen and (min-width: 576px) and (max-width: 960px) {}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    html, head, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .nav-container,
+    .banner,
+    .menu-container>ul,
+    .play{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container,
+    header{
+        padding: 70px 90px;
+    }
+    .banner{
+        height: 500px;
+        padding-top: 250px;
+        padding-left:5px ;
+        padding-right: 5px ;
+        padding-bottom: 200px;
+    }
+    .banner-img img{
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .online-game{
+        margin: 120px;
+        padding-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .online-game p{
+        padding-top: 15px;
+    }
+    .online-game-card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .play-contant {
+        padding: 100px 70px;
+        text-align: center;
+    }
+    .play p{
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .play{
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+    .play-img{
+        display: block;
+        margin-left: 240px;
+        width: 50%;
+    }
+    .img1{
+        width: 300px;
+        height: 330px;
+        position: relative;
+        bottom: 40px;
+    }
+    .img2{
+        width: 150px;
+        height: 180px;
+    }
+    .button{
+        padding-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        padding-bottom: 40px;
+    }
+    .buton{
+        width: 200px;
+        height: 70px;
+        gap: 10px;
+    }
+    .buton img{
+        width: 30px;
+        height: 30px;
+    }
+    buton h4{
+        font-size: 12px;
+        gap: 5px;
+    }
+    .buton:hover{
+        border: 1px solid #FF42A5;
+        background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .foot{
+        height: 700px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .foot-content-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .foot-term {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .foot-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding-left: 170px;
+
+    }
+    .copy{
+        font-size: 12px;
+        background: #0B0223;;
+    } 
+}
