@@ -8,6 +8,8 @@
 /* shared */
 .grad-color{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn{
@@ -145,6 +147,47 @@ header{
 .banner-img img{
     width: 500px;
 }
+.online-game{
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 50px;
+    margin-bottom: 80px;
+}
+.online-game-content h3{
+    color: #0B0223;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+
+}
+
+.online-game-content p{
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 48px;
+}
+
+.online-game-card{
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 150px;
+}
+.card img{
+    width: 240px;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.card h4{
+    color: #534C64;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /* Responsive */
 /* mobile */
@@ -154,7 +197,6 @@ header{
     .menu-container>ul{
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
     .nav-container,
     header{
@@ -170,6 +212,19 @@ header{
     .banner-img img{
         /* align-items: center; */
         width: 90%;
+    }
+    .online-game{
+        margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .online-game p{
+        padding-top: 15px;
+    }
+    .online-game-card{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 20px;
     }
 }
 
