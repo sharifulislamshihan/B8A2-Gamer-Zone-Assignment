@@ -3,18 +3,37 @@
     padding: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;1,500&display=swap');
-/* shared */
 
+
+/* shared */
+.grad-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+}
+
+.btn{
+    padding: 15px 25px;
+    align-items: center;
+    border-radius: 48px;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    }
 /* nav */
+header{
+    padding: 0 100px;
+}
 .nav-container{
-    /* height: 130px; */
+    height: 110px;
     display: flex;
     justify-content: space-around;
+    padding: 5px;
 }
 .logo{
     display: flex;
     gap: 15px;
-    padding-top: 40px;
+    padding-top: 30px;
     /* padding-left: 70px; */
 }
 .logo-img{
@@ -36,7 +55,7 @@
     font-size: 20px;
     align-items: center;
     list-style: none;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 .menu-container a{
     text-decoration: none;
@@ -66,17 +85,91 @@
 .follow-img{
     width: 30px;
 }
+.banner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 30px;
+    gap: 64px;
+}
+.banner-content h3{
+    color: #0B0223;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 600;
+}
+.banner-content h1{
+    text-align: center;
+    font-size: 95px;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner-list{
+    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+}
+.banner-list li{
+    color: #534C64;
+    font-size: 25px;
+    font-weight: 500;
+    gap: 10px;
+}
+.down{
+    list-style-image: url(./images/play.png);
+}
+.play{
+    list-style-image: url(./images/downlaod.png);
+}
+.support{
+    list-style-image: url(./images/community.png);
 
+}
+.btn1{
+    padding: 15px 25px;
+    align-items: center;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    margin-left: 25px;
+    
+}
+.banner-img img{
+    width: 500px;
+}
 
 /* Responsive */
 /* mobile */
 @media screen and (max-width: 576px) {
     .nav-container,
+    .banner,
     .menu-container>ul{
         flex-direction: column;
         align-items: center;
-        padding-top: 25px;
-        gap: 40px;
+        text-align: center;
+    }
+    .nav-container,
+    header{
+        padding: 70px 90px;
+    }
+    .banner{
+        height: 500px;
+        padding-top: 250px;
+        padding-left:5px ;
+        padding-right: 5px ;
+        padding-bottom: 200px;
+    }
+    .banner-img img{
+        /* align-items: center; */
+        width: 90%;
     }
 }
 
